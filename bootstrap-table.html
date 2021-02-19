@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>boostrap-table</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery -->
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <caption>基本表格</caption>
+                    <thead>
+                        <th>姓名</th>
+                        <th>课程</th>
+                        <th>成绩</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张三</td>
+                            <td>语文</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>数学</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">2020年期末考试成绩单</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <caption>table-striped表格</caption>
+                    <thead>
+                        <th>姓名</th>
+                        <th>课程</th>
+                        <th>成绩</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张三</td>
+                            <td>语文</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>数学</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">2020年期末考试成绩单</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <caption>table-bordered表格</caption>
+                    <thead>
+                        <th>姓名</th>
+                        <th>课程</th>
+                        <th>成绩</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张三</td>
+                            <td>语文</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>数学</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">2020年期末考试成绩单</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <caption>table-hover表格</caption>
+                    <thead>
+                        <th>姓名</th>
+                        <th>课程</th>
+                        <th>成绩</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张三</td>
+                            <td>语文</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>数学</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">2020年期末考试成绩单</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-condensed">
+                    <caption>table-condensed表格</caption>
+                    <thead>
+                        <th>姓名</th>
+                        <th>课程</th>
+                        <th>成绩</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>张三</td>
+                            <td>语文</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>数学</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">2020年期末考试成绩单</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-bordered table-condensed">
+                    <caption>设置行列样式</caption>
+                    <thead>
+                        <th>姓名</th>
+                        <th>课程</th>
+                        <th>成绩</th>
+                    </thead>
+                    <tbody>
+                        <tr class="info">
+                            <td>张三</td>
+                            <td>语文</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>数学</td>
+                            <td class="success">90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">2020年期末考试成绩单</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-condensed">
+                        <caption>响应式表格</caption>
+                        <thead>
+                            <th>姓名</th>
+                            <th>课程</th>
+                            <th>成绩</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>张三张三张三张三张三张三张三张三张三张三张三张三张三张三</td>
+                                <td>语文</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>张三</td>
+                                <td>数学</td>
+                                <td>90</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">2020年期末考试成绩单</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
