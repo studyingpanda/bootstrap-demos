@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bootstrap-pagination</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery -->
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                普通分页:<br>
+                <ul class="pagination">
+                    <li>
+                        <a class="btn"><span class="glyphicon glyphicon-backward"></span></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a class="btn"><span class="glyphicon glyphicon-forward"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                使用转义字符:<br>
+                <ul class="pagination">
+                    <li>
+                        <a class="btn"><span>&laquo;</span></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a class="btn"><span>&raquo;</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                大号分页:<br>
+                <ul class="pagination pagination-lg">
+                    <li>
+                        <a class="btn"><span>&laquo;</span></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a class="btn"><span>&raquo;</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                小号分页：<br>
+                <ul class="pagination pagination-sm">
+                    <li>
+                        <a class="btn"><span>&laquo;</span></a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a class="btn"><span>&raquo;</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                分页按钮状态<br>
+                <ul class="pagination">
+                    <li>
+                        <a class="btn"><span>&laquo;</span></a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li class="disabled"><a href="#">5</a></li>
+                    <li>
+                        <a class="btn"><span>&raquo;</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
