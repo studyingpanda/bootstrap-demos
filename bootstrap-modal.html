@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>boostrap-modal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery -->
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    打开模态框
+                </button>
+                <!-- 模态框 -->
+                <div class="modal" id="myModal">
+                    <!-- 模态的对话框 -->
+                    <div class="modal-dialog">
+                        <!-- 内容部分 -->
+                        <div class="modal-content">
+                            <!-- 头部 -->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">标题</h4>
+                            </div>
+                            <!-- 身体 -->
+                            <div class="modal-body">内容</div>
+                            <!-- 尾部 -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary" onclick="btnOpenModal()">
+                        JS打开模态框
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function btnOpenModal() {
+            $('#myModal').modal('toggle');
+        }
+    </script>
+</body>
+
+</html>
