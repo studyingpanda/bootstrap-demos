@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>boostrap-form-control</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery -->
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 基本输入控件 -->
+            <div class="col-md-12">
+                <form action="#" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3">文本框:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">密码框:</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">单选框:</label>
+                        <div class="col-md-9">
+                            <input type="radio" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">复选框:</label>
+                        <div class="col-md-9">
+                            <input type="checkbox" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">文本域:</label>
+                        <div class="col-md-9">
+                            <textarea rows="10" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 调整控件大小 -->
+            <div class="col-md-12">
+                <form action="#" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3">正常:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">大号:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control input-lg">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">小号:</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 特殊用法 -->
+            <div class="col-md-12">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="sex" value="radio-male">
+                        男
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="sex" value="radio-femal">
+                        女
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="sex2" value="radio-male">
+                        男
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="sex2" value="radio-femal">
+                        女
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        篮球
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        足球
+                    </label>
+                </div>
+                <div class="checkbox-inline">
+                    <label>
+                        <input type="checkbox">
+                        篮球
+                    </label>
+                </div>
+                <div class="checkbox-inline">
+                    <label>
+                        <input type="checkbox">
+                        足球
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
