@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bootstrap-collapse</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <a type="button" class="btn btn-primary" data-toggle="collapse" href="#section1">显示春晓文字</a>
+                <div id="section1" class="collapse">
+                    春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。
+                </div>
+            </div>
+            <br><br>
+            <div class="col-md-12">
+                <a type="button" class="btn btn-primary" data-toggle="collapse" href="#section2">显示春晓表格</a>
+                <div id="section2" class="collapse">
+                    <table>
+                        <tr>
+                            <td>春眠不觉晓</td>
+                        </tr>
+                        <tr>
+                            <td>处处闻啼鸟</td>
+                        </tr>
+                        <tr>
+                            <td>夜来风雨声</td>
+                        </tr>
+                        <tr>
+                            <td>花落知多少</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onclick="btnShow()">显示春晓</button>
+                <div id="section3" class="collapse">
+                    春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function btnShow() {
+            $("#section3").collapse("toggle");
+        }
+    </script>
+</body>
+
+</html>

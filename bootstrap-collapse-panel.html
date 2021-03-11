@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bootstrap-collapse-panel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel-group" id="panel-container">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title h4">
+                                <a data-toggle="collapse" data-parent="#panel-container" href="#poem1">春晓</a>
+                            </div>
+                        </div>
+                        <div id="poem1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title h4">
+                                <a data-toggle="collapse" data-parent="#panel-container" href="#poem2">鹅</a>
+                            </div>
+                        </div>
+                        <div id="poem2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                鹅鹅鹅，曲项向天歌。白毛浮绿水，红掌拨清波。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel-group" id="main-menu">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title h4">
+                                <a data-toggle="collapse" data-parent="#main-menu" href="#menu1">菜单1</a>
+                            </div>
+                        </div>
+                        <div id="menu1" class="panel-collapse collapse in">
+                            <ul class="list-group">
+                                <li class="list-group-item">菜单1-1</li>
+                                <li class="list-group-item">菜单1-2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title h4">
+                                <a data-toggle="collapse" data-parent="#main-menu" href="#menu2">菜单2</a>
+                            </div>
+                        </div>
+                        <div id="menu2" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item">菜单2-1</li>
+                                <li class="list-group-item">菜单2-2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function btnShow() {
+            $("#section3").collapse("toggle");
+        }
+    </script>
+</body>
+
+</html>
